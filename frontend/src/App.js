@@ -6,6 +6,7 @@ import {
   ViewVideogamePage,
   EditVideogamePage,
 } from "./pages/Index";
+import { Navbar } from "./components/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { VideogameProvider } from "./context/videogameContext";
 import { Toaster } from "react-hot-toast";
@@ -13,10 +14,11 @@ import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <div className="parent-container">
-      <div className="children-container">
-        <VideogameProvider>
-          <Toaster />
-          <BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <div className="children-container">
+          <VideogameProvider>
+            <Toaster />
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/newVideogame" element={<CreateVideogameForm />} />
@@ -30,9 +32,9 @@ function App() {
               />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
-          </BrowserRouter>
-        </VideogameProvider>
-      </div>
+          </VideogameProvider>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }

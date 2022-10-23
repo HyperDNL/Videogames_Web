@@ -559,3 +559,28 @@ body {
     display: none;
   }
 }
+
+.navbar-style {
+  background-color: #252831;
+}
+
+.navbar-title {
+  color: #f0f0f0;
+  margin-left: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-link {
+  color: #f0f0f0;
+  margin-left: 1rem;
+}
+
+.navbar-link:hover {
+  color: #ed343e;
+}
+
+.navbar-bars {
+  color: #f0f0f0;
+  width: 100%;
+}
