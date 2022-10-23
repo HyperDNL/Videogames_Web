@@ -59,7 +59,7 @@ export function ViewVideogamePage() {
                 className="btn-edit"
                 onClick={() => navigate(`/editVideogame/${videogame._id}`)}
               >
-                Edit Info
+                Edit
               </button>
               <button
                 className="btn-red"
