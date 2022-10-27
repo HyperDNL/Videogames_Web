@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import {
   MDBContainer,
@@ -8,6 +7,7 @@ import {
   MDBNavbarNav,
   MDBCollapse,
 } from "mdb-react-ui-kit";
+import { BubblyLink } from "react-bubbly-transitions";
 
 export function Navbar() {
   const [showNavSecond, setShowNavSecond] = useState(false);
@@ -25,12 +25,16 @@ export function Navbar() {
         </MDBNavbarToggler>
         <MDBCollapse navbar show={showNavSecond}>
           <MDBNavbarNav>
-            <Link className="navbar-link" to="/">
+            <BubblyLink to="/" colorStart="#ed343e" colorEnd="#1E2126">
               Home
-            </Link>
-            <Link className="navbar-link" to="/newVideogame">
+            </BubblyLink>
+            <BubblyLink
+              to="/newVideogame"
+              colorStart="#ed343e"
+              colorEnd="#1E2126"
+            >
               Add Videogame
-            </Link>
+            </BubblyLink>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>

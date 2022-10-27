@@ -10,11 +10,13 @@ import { Navbar } from "./components/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { VideogameProvider } from "./context/videogameContext";
 import { Toaster } from "react-hot-toast";
+import { BubblyContainer } from "react-bubbly-transitions";
 
 function App() {
   return (
     <div className="parent-container">
       <BrowserRouter>
+        <BubblyContainer />
         <Navbar />
         <div className="children-container">
           <VideogameProvider>

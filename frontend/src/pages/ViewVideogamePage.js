@@ -49,7 +49,7 @@ export function ViewVideogamePage() {
     );
   };
   return (
-    <div>
+    <div className="animate-in" style={{ animationDelay: "400ms" }}>
       <div className="data-container">
         <div className="cover-view">
           <div className="banner-cover-container">

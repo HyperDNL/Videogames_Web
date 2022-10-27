@@ -8,7 +8,8 @@ export function VideogameCard({ videogame }) {
     <div className="cover-container">
       <MDBRipple
         rippleTag="div"
-        className="bg-image hover-overlay hover-zoom hover-shadow"
+        className="bg-image hover-overlay hover-zoom hover-shadow animate-in"
+        style={{ animationDelay: "800ms" }}
       >
         <img src={videogame.image_cover} className="w-100" />
         <div

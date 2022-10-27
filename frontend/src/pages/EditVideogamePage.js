@@ -30,7 +30,10 @@ export function EditVideogamePage() {
 
   return (
     <div>
-      <div className="form-content">
+      <div
+        className="form-content animate-in"
+        style={{ animationDelay: "400ms" }}
+      >
         <div className="title-form">
           <h1 className="create-videogame-title">
             Update <span className="span-title">Videogame</span>

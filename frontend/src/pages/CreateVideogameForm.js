@@ -9,7 +9,10 @@ export function CreateVideogameForm() {
 
   return (
     <div>
-      <div className="form-content">
+      <div
+        className="form-content animate-in"
+        style={{ animationDelay: "800ms" }}
+      >
         <div className="title-form">
           <h1 className="create-videogame-title">
             Create New <span className="span-title">Videogame</span>

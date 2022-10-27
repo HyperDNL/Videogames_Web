@@ -571,16 +571,33 @@ body {
   margin-bottom: auto;
 }
 
-.navbar-link {
+body .react-bubbly-transitions__bubbly-link {
   color: #f0f0f0;
   margin-left: 1rem;
 }
 
-.navbar-link:hover {
+body .react-bubbly-transitions__bubbly-link.active {
+  text-decoration: underline;
   color: #ed343e;
 }
 
 .navbar-bars {
   color: #f0f0f0;
   width: 100%;
+}
+
+@keyframes in-keyframes {
+  0% {
+    opacity: 0;
+    translate: 0 100%;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 0%;
+  }
+}
+
+.animate-in {
+  animation: in-keyframes 0.5s both;
 }
